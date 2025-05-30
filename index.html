@@ -6,33 +6,31 @@
     <title>Formularios</title>
     <style>
         form {
-            margin: 0 auto;
-            width: fit-content;
-        }
-        #resultado {
-            margin-top: 20px;
-            padding: 10px;
-            border: 1px solid #000;
-            width: 90%;
-            max-width: 600px;
+            margin: 0 auto
         }
     </style>
 </head>
 <body>
+    <h1>Formulario 1</h1>
     <form action="formulario.html" method="get">
+
+        <label for="Borrar formulario">Borrar formulario 1</label>
+        <br>
+        <input type="reset">
+        <br>
 
         <label for="Nombre">
             Nombre
         </label>
         <br>
-        <input type="text" name="Nombre" id="Nombre">
+        <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese el nombre" autocomplete="off" required>
         <br>
 
         <label for="Apellido">
             Apellido
         </label>
         <br>
-        <input type="text" name="Apellido" id="Apellido">
+        <input type="text" name="Apellido" id="Apellido" disabled>
         <br>
 
         <label for="Direccion">
@@ -185,6 +183,35 @@
         <br>
 
         <input type="submit" value="Enviar datos">
+    </form>
+    <h1>Formulario 2</h1>
+    <br>
+    <form action="formulario.html" method="get">
+
+        <label for=""> Seleccion de archivo</label>
+        <br>
+        <input type="file">
+        <br><br>
+        <progress max="20" value="10"></progress>
+        <br><br>
+        <!--Botones-->
+        <label for="Submit">Submit</label>
+        <br>
+        <input type="submit">
+        <br>
+        <label for="Imagen">Imagen</label>
+        <br>
+        <input type="image" src="ImagenesF/Caja">
+        <br>
+        <label for="Boton">Boton sin funcion</label>
+        <br>
+        <input type="boton" value="Input boton">
+        <br>
+        <button>Boton simple</button>
+        <br>
+        <label for="Borrar formulario">Borrar formulario 2</label>
+        <br>
+        <input type="reset">
     </form>
 </body>
 </html>
