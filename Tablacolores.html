@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+    <style>
+        table{
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+            font-family: monospace;
+            font-size: 20px;
+            border-collapse: collapse;
+            border: 2px solid black;
+            color: rgb(255, 255, 255);
+        }
+        table th,table tr,table td{
+            border: 2px solid black;
+            padding: 5px 15px;
+        }
+        table th{
+            background-color: rgba(0, 26, 173, 0.795);
+            border: 2px solid black;
+            width: 100px;
+            font-weight: 400;
+        }
+        table tbody,
+        table tr:first-child{
+            background-color: rgba(0, 26, 173, 0.795)
+        }
+        .color1{
+            background-color: rgb(163, 163, 163);
+            color: black;
+        }
+        .color2{
+            background-color: rgb(233, 233, 233);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Correo</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>123456</td>
+                <td class="color1">RULO</td>
+                <td class="color1">2BLEA</td>
+                <td class="color1">xxxx@gmail.com</td>
+                <td class="color1">ICONOS</td>
+            </tr>
+            <tr>
+                <td>123456</td>
+                <td class="color2">RULO</td>
+                <td class="color2">2BLEA</td>
+                <td class="color2">xxxx@gmail.com</td>
+                <td class="color2">ICONOS</td>
+            </tr>
+            <tr>
+                <td>123456</td>
+                <td class="color1">RULO</td>
+                <td class="color1">2BLEA</td>
+                <td class="color1">xxxx@gmail.com</td>
+                <td class="color1">ICONOS</td>
+            </tr>
+            <tr>
+                <td>123456</td>
+                <td class="color2">RULO</td>
+                <td class="color2">2BLEA</td>
+                <td class="color2">xxxx@gmail.com</td>
+                <td class="color2">ICONOS</td>
+            </tr>
+            <tr>
+                <td>123456</td>
+                <td class="color1">RULO</td>
+                <td class="color1">2BLEA</td>
+                <td class="color1">xxxx@gmail.com</td>
+                <td class="color1">ICONOS</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
