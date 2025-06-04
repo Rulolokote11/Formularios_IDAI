@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Logos/Fontawesome/css/all.css">
     <title>Tabla</title>
     <style>
         table{
@@ -12,30 +13,43 @@
             font-family: monospace;
             font-size: 20px;
             border-collapse: collapse;
-            border: 2px solid black;
             color: rgb(255, 255, 255);
         }
         table th,table tr,table td{
-            border: 2px solid black;
-            padding: 5px 15px;
+            border: 2px solid gray;
+            padding: 5px 35px;
+            color: black;
         }
         table th{
-            background-color: rgba(0, 26, 173, 0.795);
-            border: 2px solid black;
+            background-color: #17A2B8;
+            border: 2px solid gray;
             width: 100px;
             font-weight: 400;
+            color: rgb(255, 255, 255);
         }
-        table tbody,
-        table tr:first-child{
-            background-color: rgba(0, 26, 173, 0.795)
+        table td span{
+            margin-right: 6px;
+            cursor: pointer;
         }
-        .color1{
-            background-color: rgb(163, 163, 163);
-            color: black;
+        table td span:nth-child(1){
+            color: #17A2B8;
         }
-        .color2{
-            background-color: rgb(233, 233, 233);
-            color: black;
+        table td span:nth-child(2){
+            color: rgb(2, 109, 2);
+        }
+        table td span:nth-child(3){
+            color: rgb(197, 4, 4);
+        }
+        table th,
+        table td:first-child{
+            background-color: #17A2B8;
+            color: rgb(255, 255, 255);
+        }
+        table tr:nth-child(odd){
+            background-color: rgb(0, 0, 0,0.05);
+        }
+        table tr:hover{
+            background-color: rgb(0, 0, 0, .15);  
         }
     </style>
 </head>
@@ -53,38 +67,58 @@
         <tbody>
             <tr>
                 <td>123456</td>
-                <td class="color1">RULO</td>
-                <td class="color1">2BLEA</td>
-                <td class="color1">xxxx@gmail.com</td>
-                <td class="color1">ICONOS</td>
+                <td>RULO</td>
+                <td>2BLEA</td>
+                <td>xxxx@gmail.com</td>
+                <td>
+                    <span class="fas fa-info-circle"></span>
+                    <span class="fas fa-edit"></span>
+                    <span class="fas fa-trash-alt"></span>
+                </td>
             </tr>
             <tr>
                 <td>123456</td>
-                <td class="color2">RULO</td>
-                <td class="color2">2BLEA</td>
-                <td class="color2">xxxx@gmail.com</td>
-                <td class="color2">ICONOS</td>
+                <td>RULO</td>
+                <td>2BLEA</td>
+                <td>xxxx@gmail.com</td>
+                <td>
+                    <span class="fas fa-info-circle"></span>
+                    <span class="fas fa-edit"></span>
+                    <span class="fas fa-trash-alt"></span>
+                </td>
             </tr>
             <tr>
                 <td>123456</td>
-                <td class="color1">RULO</td>
-                <td class="color1">2BLEA</td>
-                <td class="color1">xxxx@gmail.com</td>
-                <td class="color1">ICONOS</td>
+                <td>RULO</td>
+                <td>2BLEA</td>
+                <td>xxxx@gmail.com</td>
+                <td>
+                    <span class="fas fa-info-circle"></span>
+                    <span class="fas fa-edit"></span>
+                    <span class="fas fa-trash-alt"></span>
+                </td>
             </tr>
             <tr>
                 <td>123456</td>
-                <td class="color2">RULO</td>
-                <td class="color2">2BLEA</td>
-                <td class="color2">xxxx@gmail.com</td>
-                <td class="color2">ICONOS</td>
+                <td>RULO</td>
+                <td>2BLEA</td>
+                <td>xxxx@gmail.com</td>
+                <td>
+                    <span class="fas fa-info-circle"></span>
+                    <span class="fas fa-edit"></span>
+                    <span class="fas fa-trash-alt"></span>
+                </td>
             </tr>
             <tr>
                 <td>123456</td>
-                <td class="color1">RULO</td>
-                <td class="color1">2BLEA</td>
-                <td class="color1">xxxx@gmail.com</td>
-                <td class="color1">ICONOS</td>
+                <td>RULO</td>
+                <td>2BLEA</td>
+                <td>xxxx@gmail.com</td>
+                <td>
+                    <span class="fas fa-info-circle"></span>
+                    <span class="fas fa-edit"></span>
+                    <span class="fas fa-trash-alt"></span>
+                </td>
             </tr>
         </tbody>
     </table>
