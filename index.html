@@ -5,22 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
     <style>
+        body{
+            background-color: #3B37A5;
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center;     /* Centra verticalmente */
+            height: 100vh;           /* Usa el 100% del alto de la ventana */
+            margin: 0;            /* Elimina márgenes predeterminados */
+        }
+        ul{
+            background-color: #2823CF;
+            width: 20%;
+            padding: 0px;
+        }
+        ul li{
+            list-style: none;
+            padding: 20px;
+            border-bottom: 2px solid #0800FA;
+            text-align: center;
+            font-size: 20px;
+            font-family: monospace;
+            color: #FFF;
+            cursor: pointer;
+            transition: all 2s;
+            box-shadow: 0 4px 6px rgb(0, 0, 0,.2);
+        }
+        li:hover{
+            background-color: rgb(0, 0, 0,.1);
+            transition: all 1s;
+            transform: translateY(-2px);
+        }
+        a{
+            color: #FFF;
+        }
+        .encabezado{
+            background-color: #2823CF;
+            list-style: none;
+            padding: 20px;
+            border-bottom: 2px solid #0800FA;
+            text-align: center;
+            font-size: 20px;
+            font-family: monospace;
+            color: #FFF;
+            cursor: pointer;
+            transition: all 2s;
+        }
     </style>
 </head>
 <body>
-    <h1>Formularios</h1>
-    <a href="FormulariosEjemplos.html">Formularios</a>
-    <br>
-    <h1>Colores</h1>
-    <a href="Colores.html">COLORES</a>
-    <br>
-    <h1>Tablas</h1>
-    <a href="Tablacolores.html">Tabla</a>
-    <br>
-    <h1>Menu</h1>
-    <a href="Menu.html">Menu</a>
-    <br>
-    <h1>Boton</h1>
-    <a href="Boton.html">Boton</a>
+    <ul>
+        <li class="encabezado">Tareas del segundo parcial</li>
+        <li><a href="FormulariosEjemplos.html">Formularios</a></li>
+        <li><a href="Colores.html">Colores</a></li>
+        <li><a href="Tablacolores.html">Tabla</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Boton.html">Botones</a></li>
+    </ul>
 </body>
 </html>
