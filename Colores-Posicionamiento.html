@@ -27,9 +27,6 @@
         .tabla div{
             display: table-cell;
         }
-        .relativo div{
-
-        }
 
         #clavecolor{
             background-color: #58DB88;
@@ -50,6 +47,7 @@
             margin: 10px;
         }
         #clasehls{
+            position: relative;
             background-color: hsl(250deg, 30%, 30%);
             width: 200px;
             height: 200px;
@@ -59,6 +57,7 @@
             margin: 10px;
         }
         #clasedegl{
+            position: absolute;
             background: linear-gradient(90deg,blue,red);
             width: 200px;
             height: 200px;
@@ -68,6 +67,9 @@
             margin: 10px;
         }
         #clasedegr{
+            position: fixed;
+            right: 100px;
+            top: 200px;
             background: radial-gradient(rgb(153, 0, 0),rgb(241, 6, 190),rgb(111, 0, 175),rgb(4, 1, 168));
             width: 200px;
             height: 200px;
@@ -84,6 +86,17 @@
             border: 2px solid black;
             padding: 10px;
             margin: 10px;
+        }
+
+        .flotante{
+            height: 400px;
+            width: 100%;
+        }
+        .flotante div{
+            float: left;
+        }
+        .flotante div:nth-child(2){
+               float: right;
         }
     </style>
 </head>
@@ -107,19 +120,15 @@
         <div id="clavecolorrgb"></div>
     </article>
     <article>
-        <div id="clavecolorrgb"></div>
          <div id="clasehls"></div>
          <div id="clasedegl"></div>
+         <div id="clasedegr"></div>
     </article>
-    <br>
-    <div id="clasedegr"></div>
-    <br>
-    <div id="clasetrans"></div>
-    <br>
-    <div id="mi-div"></div>
-    <br>
-    <div></div>
-    <br>
-    
+    <article class="flotante">
+        <div id="mi-div"></div>
+        <div id="mi-div"></div>
+        <div id="mi-div"></div>
+        <div id="mi-div"></div>
+    </article>
 </body>
 </html>
