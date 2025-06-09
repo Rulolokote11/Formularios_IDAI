@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores Posicionamiento</title>
+    <style>
+        article{
+            border: 1px solid red;
+			margin-bottom: 100px;
+        }
+        div{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+        .bloque div{
+            display: block;
+        }
+        .linea div{
+            display: inline-block;
+        }
+        .tabla div{
+            display: table-cell;
+        }
+        .relativo div{
+
+        }
+
+        #clavecolor{
+            background-color: #58DB88;
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+        #clavecolorrgb{
+            background-color: rgb(236, 233, 7);
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+        #clasehls{
+            background-color: hsl(250deg, 30%, 30%);
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+        #clasedegl{
+            background: linear-gradient(90deg,blue,red);
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            border-color: black;
+            padding: 10px;
+            margin: 10px;
+        }
+        #clasedegr{
+            background: radial-gradient(rgb(153, 0, 0),rgb(241, 6, 190),rgb(111, 0, 175),rgb(4, 1, 168));
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+        #clasetrans{
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <article class="bloque">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </article>
+    <article class="linea">
+        <div id="clavecolor"></div>
+        <div id="clavecolor"></div>
+        <div id="clavecolor"></div>
+        <div id="clavecolor"></div>
+    </article>
+    <article class="tabla">
+        <div id="clavecolorrgb"></div>
+        <div id="clavecolorrgb"></div>
+        <div id="clavecolorrgb"></div>
+        <div id="clavecolorrgb"></div>
+    </article>
+    <article>
+        <div id="clavecolorrgb"></div>
+         <div id="clasehls"></div>
+         <div id="clasedegl"></div>
+    </article>
+    <br>
+    <div id="clasedegr"></div>
+    <br>
+    <div id="clasetrans"></div>
+    <br>
+    <div id="mi-div"></div>
+    <br>
+    <div></div>
+    <br>
+    
+</body>
+</html>
