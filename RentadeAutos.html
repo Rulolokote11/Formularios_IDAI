@@ -11,28 +11,28 @@
         hr{
             color: #fff;
         }
-        .Contenedor{
+        .contenedor{
             background-color: black;
             width: 100%;
-            height: 1000px;
+            height: 1500px;
             margin-top: 20px;
             display: flex;
             flex-direction: row;
-            float: left;
         }
         .items{
-			width: 200px;
-			height: 100px;
-			margin: 10px 0px 0px 10px;
+			background: black;
+			width: 30%;
+			height: 1500px;
+            color: #fff;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			text-align: center;
+			line-height: 100px;
+			font-size: 22px;
+            padding: 0px;
 		}
         .c1{
-            flex-direction: column;
-        }
-        .c2{
-            flex-flow: column wrap;
-        }
-        .c3{
-            flex-flow: column wrap;
+            justify-content: center;
+            align-items: flex-start;
         }
         footer{
             text-align: center;
@@ -51,26 +51,147 @@
         a:hover{
             cursor: pointer;
         }
-        .Etiqueta{
-            background-color: #fff;
-            width: 25%;
-        }
-        .Logo{
+        .logo{
             width: 300px;
             height: 250px;
+        }
+        .etiqueta{
+            background-color: #fff;
+            color: black;
         }
     </style>
 </head>
 <body>
     <hr>
-    <div class="Contenedor c1">
+    <div class="contenedor c1">
         <div class="items">
-            <img src="ImagenesF/LogoAgenciaAutos.png" alt="Logo" class="Logo">
+            <img src="ImagenesF/LogoAgenciaAutos.png" alt="Logo" class="logo">
+            <div class="etiqueta">
+                <p>Renta de Autos</p>
+            </div>
+            <form action="">
+                <h1>Datos del cliente</h1>
+                <hr>
+                <label for="Nombre">
+                    Nombre:
+                </label>
+                <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese el nombre" autocomplete="off" required>
+                <br>
+                <label for="Direccion">
+                    Direccion:
+                </label>
+                <input type="text" name="Direccion" id="Direccion" placeholder="Ingrese la direccion" autocomplete="off">
+                <br>
+                <label for="Telefono">
+                    Telefono:
+                </label>
+                <input type="text" name="Telefono" id="Telefono" placeholder="Ingrese el telefono" autocomplete="off">
+                <hr>
+                <label for="FechaRenta">
+                Fecha de renta:
+                </label>
+                <input type="date" name="FechaRenta" id="FechaRenta">
+                <br>
+                <label for="Dias">
+                    Numero de dias:
+                </label>
+                <input type="number" name="Dias" id="Dias" placeholder="Ingrese el numero de dias" autocomplete="off">
+            </form>
         </div>
         <div class="items">
-            <h1 class="RentaEt">Renta de Autos</h1>
+            <h1>Marca de preferencia</h1>
+            <hr>
+            <form action="">
+                <input type="radio" name="Marca1" id="Marca1">
+                <label for="Marca1">
+                    Mercedez Benz
+                </label>
+                <br>
+                <input type="radio" name="Marca2" id="Marca2">
+                <label for="Marca2">
+                    BMW
+                </label>
+                <br>
+                <input type="radio" name="Marca3" id="Marca3">
+                <label for="Marca3">
+                    PORSCHE
+                </label>
+                <br>
+                <input type="radio" name="Marca4" id="Marca4">
+                <label for="Marca4">
+                    Audi
+                </label>
+                <br>
+                <input type="radio" name="Marca5" id="Marca5">
+                <label for="Marca5">
+                    INFINITI
+                </label>
+                <br>
+            </form>
+            <hr>
+            <div></div>
         </div>
-        <div class="items"></div>
+        <div class="items">
+            <h1>Modelo</h1>
+            <hr>
+            <form action="">
+                <input type="radio" name="Opcion1" id="Opcion1">
+                <label for="Opcion1">
+                    Sedans
+                </label>
+                <br>
+                <input type="radio" name="Opcion2" id="Opcion2">
+                <label for="Opcion2">
+                    Deportivo
+                </label>
+                <br>
+                <input type="radio" name="Opcion3" id="Opcion3">
+                <label for="Opcion3">
+                    SUV
+                </label>
+                <br>
+                <input type="radio" name="Opcion4" id="Opcion4">
+                <label for="Opcion4">
+                    Familiar
+                </label>
+            </form>
+            <h1>Servicios Extra</h1>
+            <hr>
+            <h2>La renta de autos puede estar acompañado de servicios extras:</h2>
+            <form action="">
+                <input type="checkbox" name="Opcion1" id="Opcion1">
+                <label for="Opcion1">
+                    Contratacionde chofer all day.
+                </label>
+                <br>
+                <input type="checkbox" name="Opcion2" id="Opcion2">
+                <label for="Opcion2">
+                    Traslado a hotel/aeropuerto.
+                </label>
+                <br>
+                <input type="checkbox" name="Opcion3" id="Opcion3">
+                <label for="Opcion3">
+                    Kilometraje libre.
+                </label>
+                <br>
+                <input type="checkbox" name="Opcion4" id="Opcion4">
+                <label for="Opcion4">
+                    Auto electrico.
+                </label>
+                <br>
+                <input type="checkbox" name="Opcion5" id="Opcion5">
+                <label for="Opcion5">
+                    Esterilizacion diaria nocturna.
+                </label>
+                <br>
+                <input type="checkbox" name="Opcion6" id="Opcion6">
+                <label for="Opcion6">
+                    Internet Wifi in car.
+                </label>
+                <br>
+                <button>Enviar resultados</button>
+            </form>
+        </div>
     </div>
     <hr>
     <footer>
